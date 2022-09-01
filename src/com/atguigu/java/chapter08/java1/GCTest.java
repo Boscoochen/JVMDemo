@@ -3,6 +3,9 @@ package com.atguigu.java.chapter08.java1;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * -Xms9m -Xmx9m -XX:+PrintGCDetails
+ */
 public class GCTest {
     public static void main(String[] args) {
         int i = 0;
