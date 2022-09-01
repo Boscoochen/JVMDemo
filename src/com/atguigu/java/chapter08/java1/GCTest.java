@@ -1,4 +1,4 @@
-package com.atguigu.java.chapter8.java1;
+package com.atguigu.java.chapter08.java1;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.atguigu.java.chapter8.java;
+package com.atguigu.java.chapter08.java;
 
 public class SimpleHeap {
     private int id;
