@@ -1,7 +1,7 @@
 package com.atguigu.java;
 
-public class ObjectTest {
+public class CustomerTest {
     public static void main(String[] args) {
-        Object obj = new Object();
+        Customer customer = new Customer();
     }
 }
