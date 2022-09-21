@@ -66,4 +66,35 @@ public class StringTest5 {
         String s5 = s4 + "hadoop";
         System.out.println(s1 == s5); //true
     }
+
+    @Test
+    public void test6(){
+
+        long start = System.currentTimeMillis();
+
+        method1(100000);//4014
+//        method2(100000);//7
+
+        long end = System.currentTimeMillis();
+
+        System.out.println("花费的时间为：" + (end - start));
+    }
+
+    public void method1(int highLevel){
+        String src = "";
+        for(int i = 0;i < highLevel;i++){
+            src = src + "a";//每次循环都会创建一个StringBuilder、String
+        }
+//        System.out.println(src);
+
+    }
+
+    public void method2(int highLevel){
+        //只需要创建一个StringBuilder
+        StringBuilder src = new StringBuilder();
+        for (int i = 0; i < highLevel; i++) {
+            src.append("a");
+        }
+//        System.out.println(src);
+    }
 }
