@@ -36,4 +36,34 @@ public class StringTest5 {
         String s8 = s6.intern();
         System.out.println(s3 == s8);//true
     }
+
+    @Test
+    public void test3() {
+        String s1 = "a";
+        String s2 = "b";
+        String s3 = "ab";
+        String s4 = s1 + s2;
+        System.out.println(s3 == s4);
+    }
+
+    @Test
+    public void test4() {
+        final String s1 = "a";
+        final String s2 = "b";
+        String s3 = "ab";
+        String s4 = s1 + s2;
+        System.out.println(s3 == s4);
+    }
+
+    @Test
+    public void test5() {
+        String s1 = "javaEEhadoop";
+        String s2 = "javaEE";
+        String s3 = s2 + "hadoop";
+        System.out.println(s1 == s3); //false
+
+        final String s4 = "javaEE";
+        String s5 = s4 + "hadoop";
+        System.out.println(s1 == s5); //true
+    }
 }
