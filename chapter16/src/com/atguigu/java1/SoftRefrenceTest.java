@@ -18,6 +18,7 @@ public class SoftRefrenceTest {
         }
     }
 
+
     public static void main(String[] args) {
         //创建对象，建立软引用
 //        SoftReference<User> userSoftRef = new SoftReference<User>(new User(1, "songhk"));
